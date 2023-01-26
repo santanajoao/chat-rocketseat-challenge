@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ChatContactInfos from './ChatContactInfos';
 import '../styles/App.css';
 import ChatMessagesContainer from './ChatMessagesContainer';
+import ChatMessageBar from './ChatMessageBar';
 
 const INITIAL_MESSAGES = [
   {
@@ -37,6 +38,7 @@ export default class App extends Component {
       <div className="App">
         <ChatContactInfos />
         <ChatMessagesContainer messages={messages} />
+        <ChatMessageBar />
       </div>
     );
   }

@@ -1,0 +1,53 @@
+.ChatMessageBar {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  border-radius: 100px;
+  height: 52px;
+  padding: 14px 24px;
+  background-color: #282843;
+  width: 100%;
+  margin-top: 24px;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+.message-textarea {
+  justify-content: center;
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #E1E1E6;
+  min-height: 14px;
+  width: 100%;
+  white-space: break-spaces;
+}
+
+.message-textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.message-textarea::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  color: #E1E1E6;
+  font-family: 'Roboto', sans-serif;
+}
+
+.send-msg-btn {
+  border: none;
+  background-color: transparent;
+  width: 23px;
+  height: 20px;
+}
+
+.send-msg-icon {
+  cursor: pointer;
+  width: 23px;
+  height: 20px;
+}

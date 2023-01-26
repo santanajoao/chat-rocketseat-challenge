@@ -16,6 +16,13 @@
   display: flex;
   flex-flow: column nowrap;
   gap: 30px;
+  flex-grow: 1;
+  overflow: auto;
+  height: calc(100vh - 236px)
+}
+
+.message-list::-webkit-scrollbar {
+  display: none;
 }
 
 .message-list > li {
