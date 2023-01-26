@@ -39,11 +39,6 @@ export default class App extends Component {
     });
   };
 
-  scrollToBottom = () => {
-    const list = document.querySelector('.message-list');
-    list.scrollTo(0, list.scrollHeight);
-  };
-
   handleSubmit = (event) => {
     event.preventDefault();
     
