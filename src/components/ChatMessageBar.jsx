@@ -4,15 +4,22 @@ import '../styles/ChatMessageBar.css';
 
 export default class ChatMessageBar extends Component {
   render() {
+    const { message, onChange, onSubmit } = this.props;
     return (
-      <form className="ChatMessageBar">
+      <form onSubmit={onSubmit} className="ChatMessageBar">
         <textarea
+          value={message}
           type="text"
-          placeholder="Digite sua mensagem"
-          className="message-textarea"
           rows="1"
+          placeholder="Digite sua mensagem"
+          onChange={onChange}
+          className="message-textarea"
         />
-        <button type="submit" className="send-msg-btn">
+        <button
+          type="submit"
+          disabled={!message.length}
+          className="send-msg-btn"
+        >
           <img
             src={sendMsgIcon}
             className="send-msg-icon"
