@@ -3,12 +3,7 @@ import PropTypes from 'prop-types';
 import MessageCard from './MessageCard';
 import '../styles/ChatMessagesContainer.css';
 
-export default class ChatMessagesContainer extends Component {
-  componentDidUpdate() {
-    const { elRef } = this;
-    elRef.scrollTo(0, elRef.scrollHeight);
-  }
-  
+export default class ChatMessagesContainer extends Component {  
   render() {
     const { messages } = this.props;
     return (
