@@ -11,7 +11,7 @@ export default class ChatContactInfos extends Component {
           <img
             src={chatContactAvatar}
             className="contact-picture"
-            alt="Foto deperfil do contato"
+            alt="Foto de perfil do contato"
           />
           <span className="name-status-container">
             <div className="contact-name">Cecilia Sassaki</div>
