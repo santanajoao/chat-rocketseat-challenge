@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import '../styles/MessageCard.css';
 
 export default class MessageCard extends Component {
@@ -17,3 +18,9 @@ export default class MessageCard extends Component {
     );
   }
 }
+
+MessageCard.propTypes = {
+  sender: PropTypes.string.isRequired,
+  time: PropTypes.string.isRequired,
+  message: PropTypes.string.isRequired,
+};

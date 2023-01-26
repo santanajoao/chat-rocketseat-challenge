@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import sendMsgIcon from '../assets/send-msg-icon.svg';
 import '../styles/ChatMessageBar.css';
 
@@ -30,3 +31,9 @@ export default class ChatMessageBar extends Component {
     );
   }
 }
+
+ChatMessageBar.propTypes = {
+  message: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired,
+};

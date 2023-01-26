@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ChatContactInfos from './ChatContactInfos';
-import '../styles/App.css';
 import ChatMessagesContainer from './ChatMessagesContainer';
 import ChatMessageBar from './ChatMessageBar';
+import '../styles/App.css';
 
 const INITIAL_MESSAGES = [
   {
@@ -39,17 +39,22 @@ export default class App extends Component {
     });
   };
 
+  scrollToBottom = () => {
+    const list = document.querySelector('.message-list');
+    list.scrollTo(0, list.scrollHeight);
+  };
+
   handleSubmit = (event) => {
     event.preventDefault();
     
     this.setState(({ message, messages }) => {
-        const msgInfos = {
-          sender: 'Você',
-          time: new Date().toLocaleTimeString().slice(0, 5),
-          message,
-        }
+      const msgInfos = {
+        sender: 'Você',
+        time: new Date().toLocaleTimeString().slice(0, 5),
+        message,
+      }
       return { messages: [...messages, msgInfos], message: '' };
-    });
+    }, this.scrollToBottom);
   };
 
   render() {

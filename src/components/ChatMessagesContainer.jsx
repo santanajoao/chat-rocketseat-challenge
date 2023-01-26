@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import '../styles/ChatMessagesContainer.css';
+import PropTypes from 'prop-types';
 import MessageCard from './MessageCard';
+import '../styles/ChatMessagesContainer.css';
 
 export default class ChatMessagesContainer extends Component {
   render() {
@@ -19,3 +20,7 @@ export default class ChatMessagesContainer extends Component {
     );
   }
 }
+
+ChatMessagesContainer.propTypes = {
+  messages: PropTypes.string.isRequired,
+};
