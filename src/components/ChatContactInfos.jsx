@@ -21,7 +21,7 @@ export default class ChatContactInfos extends Component {
             </div>
           </span>
         </span>
-        <button type="button" className="close-chat-btn">
+        <button type="button" name="close-chat-btn" className="close-chat-btn">
           <img src={closeChatIcon} className="close-chat-icon" alt="Ícone de fechar o chat" />
         </button>
       </div>
