@@ -8,17 +8,17 @@
   font-weight: 400;
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
-  text-align: center;
   margin: 25px;
+  text-align: center;
 }
 
 .message-list {
   display: flex;
   flex-flow: column nowrap;
-  gap: 30px;
   flex-grow: 1;
+  gap: 30px;
+  height: calc(100vh - 236px);
   overflow: auto;
-  height: calc(100vh - 236px)
 }
 
 .message-list::-webkit-scrollbar {

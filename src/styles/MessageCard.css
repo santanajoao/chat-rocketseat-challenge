@@ -2,21 +2,20 @@
   display: flex;
   flex-flow: column nowrap;
   gap: 10px;
-  display: flex;
 }
 
 .msg-owner-and-time {
+  color: #E1E1E6;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 400;
-  color: #E1E1E6;
 }
 
 .msg {
-  font-weight: 400;
-  font-size: 12px;
-  font-family: 'Roboto', sans-serif;
   color: #E1E1E6;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
   max-width: 53vw;
   padding: 14px;
 }
@@ -35,6 +34,6 @@
 }
 
 .addressee > .msg {
-  border-radius: 0px 8px 8px 8px;
   background-color: #633BBC;
+  border-radius: 0px 8px 8px 8px;
 }
