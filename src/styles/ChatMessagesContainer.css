@@ -1,0 +1,23 @@
+.ChatMessagesContainer {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.chat-general-time {
+  color: #E1E1E6;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 25px;
+}
+
+.message-list {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 30px;
+}
+
+.message-list > li {
+  list-style: none;
+}

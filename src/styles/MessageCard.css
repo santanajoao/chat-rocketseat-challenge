@@ -1,0 +1,40 @@
+.MessageCard {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  display: flex;
+}
+
+.msg-owner-and-time {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #E1E1E6;
+}
+
+.msg {
+  font-weight: 400;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  color: #E1E1E6;
+  max-width: 150px;
+  padding: 14px;
+}
+
+.sender {
+  align-items: flex-end;
+}
+
+.addressee {
+  align-items: flex-start;
+}
+
+.sender > .msg {
+  background-color: #07847E;
+  border-radius: 8px 8px 0px 8px;
+}
+
+.addressee > .msg {
+  border-radius: 0px 8px 8px 8px;
+  background-color: #633BBC;
+}
